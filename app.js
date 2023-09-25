@@ -65,9 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
                 if (data.cliente) {
-                    alert("jummmm");
                     const cliente = data.cliente;
-                    alert(cliente.apellido);
                     document.getElementById('nombre').value = cliente.nombre;
                     document.getElementById('apellidos').value = cliente.apellido;
                     document.getElementById('fechaNacimiento').value = cliente.fecha_Nacimiento;
