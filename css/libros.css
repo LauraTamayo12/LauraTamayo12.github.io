@@ -1,0 +1,56 @@
+/* Puedes agregar estilos CSS aquí para personalizar tu página */
+.category {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.book-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-item {
+    width: calc(25% - 20px); /* 4 columnas por fila */
+    margin-bottom: 20px;
+    border: 2px solid #3396f17c;
+    padding: 10px;
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 10px; /* Agregar bordes redondeados */
+}
+
+
+.book-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.book-info {
+    font-size: 14px;
+    text-align: justify; /* Justificar el texto */
+}
+
+.book-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.book-link:hover {
+    background-color: #0056b3;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+}

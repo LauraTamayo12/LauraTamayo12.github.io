@@ -1,0 +1,113 @@
+/* Agrega jQuery UI */
+@import url('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+
+/* Agrega Font Awesome */
+@import url('https://kit.fontawesome.com/64d58efce2.js');
+
+/* Estilos generales */
+body {
+    background-color: rgb(251, 247, 247);
+    color: #1b1b3f;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* Estilos para la página de inicio */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background-color: #333;
+}
+
+/* Estilos para la página de inicio del propietario */
+
+
+
+.wrapper {
+    height: 590px;
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 1014px;
+}
+/*TODO seccion cabecera*/
+header {
+    background-color: #1b1b3f;
+    color: rgb(251, 247, 247);
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    height: 100px;
+}
+/*para cambiar la posicion de los titulos*/
+header h1 {
+    float: left;
+    margin-top: 15px;
+}
+header h1 .color {
+    color: #02b8dd;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+}
+header nav ul li a {
+    color: rgb(255, 250, 250);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+header img {
+    max-width: 100%; /* Hacer que la imagen sea responsive (ancho máximo del 100%) */
+    height: auto; /* Mantener la proporción de la imagen */
+}
