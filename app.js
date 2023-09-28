@@ -58,19 +58,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 const data = await response.json();
                 resultDiv.textContent = 'Inicio de sesión exitoso';
 
+                if (data.cliente) {
+
+                    const clienteData = {
+                        nombre: data.cliente.nombre,
+                        apellido: data.cliente.apellido,
+                        fecha_Nacimiento: data.cliente.fecha_Nacimiento
+                    }
+
+                    localStorage.setItem("clienteData", JSON.stringify(clienteData));
+
+                }
                 // Verificar si hay una URL de redirección
                 if (data.redirectUrl) {
                     // Redirigir a la URL de redirección
                     window.location.href = data.redirectUrl;
                 }
 
-                if (data.cliente) {
-                    const cliente = data.cliente;
-                    document.getElementById('nombre').value = cliente.nombre;
-                    document.getElementById('apellidos').value = cliente.apellido;
-                    document.getElementById('fechaNacimiento').value = cliente.fecha_Nacimiento;
-                    // Llena otros campos del formulario según sea necesario
-                }
+           
 
             } else {
                 resultDiv.textContent = 'Error al iniciar sesión';

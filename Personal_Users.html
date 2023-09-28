@@ -14,6 +14,9 @@
         http://twitter.com/halalit_usman
         ===
     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <meta charset="utf-8">
     <title>Users</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -184,32 +187,31 @@
 
                                 <div class="input-group col-md-4">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
                                 </div>
                                 <br>
                                 <div class="input-group col-md-4">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
-                                    <input type="text" class="form-control" placeholder="Apellidos">
+                                    <input type="text" class="form-control" placeholder="Apellidos" name="apellidos">
                                 </div>
                                 <br>
                                 <div class="input-group col-md-4">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
-                                    <input type="text" class="form-control" placeholder="Username">
+                                    <input type="text" class="form-control" placeholder="Username" name="username">
                                 </div>
                                 <br>
                                 <div class="input-group col-md-4">
                                     <span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
-                                    <input type="text" class="form-control" placeholder="Password">
+                                    <input type="password" class="form-control" placeholder="Password" name="password">
                                 </div>
                                 <br>
                                 <div class="input-group col-md-4">
-                                    <span class="input-group-addon"><i
-                                            class="glyphicon glyphicon-calendar red"></i></span>
-                                    <input type="text" class="form-control" placeholder="Fecha de Nacimiento" />
-                                </div>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar red"></i></span>
+                                    <input type="text" class="form-control" id="fechaNacimiento" name="fechaNacimiento" />
+                                </div>                                
                                 <br>
                                 <form role="form">
-                                    <button type="submit" class="btn btn-primary btn-round btn-lg">Agregar</button>
+                                    <button id="agregarButton" type="submit" class="btn btn-primary btn-round btn-lg">Agregar</button>
                                 </form>
                             </div>
                         </div>
@@ -524,7 +526,7 @@
                 <script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
                 <!-- data table plugin -->
                 <script src='js/jquery.dataTables.min.js'></script>
-                <script src="app.js"></script>
+                <script src="personal.js"></script>
                 <!-- select or dropdown enhancer -->
                 <script src="bower_components/chosen/chosen.jquery.min.js"></script>
                 <!-- plugin for gallery image view -->
